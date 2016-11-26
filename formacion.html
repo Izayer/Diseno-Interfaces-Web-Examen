@@ -10,9 +10,30 @@
     <!-- Bootstrap -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     
+    <style>
+    body {
+        position: relative;
+    }
+    ul.nav-pills {
+        top: 240px;
+        left: 10px;
+        position: fixed;
+    }
+    div.col-sm-9 div {
+
+        font-size: 28px;
+    }
+
     
+    @media screen and (max-width: 810px) {
+      #section1, #section2, #section3, #section41, #section42  {
+          margin-left: 150px;
+      }
+    }
+    </style>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#myScrollspy" data-offset="80">
+
       <div class="container-fluid">
     <div class="row">
             <div class="col-md-3 col-xs-12" >
@@ -44,19 +65,22 @@
                         <ul class="nav navbar-nav">
                           <li ><a href="index.html"class="glyphicon glyphicon-home"> Inicio<span class="sr-only">(current)</span></a></li>
                           
-                            <li class="dropdown">
-                            <a href="#" class="dropdown-toggle glyphicon glyphicon-education" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Formación<span class="caret"></span></a>
+                            <li class="dropdown active">
+                            <a href="formacion.html" class="dropdown-toggle glyphicon glyphicon-education" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Formación<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
+                              
+                            <li><a href="formacion.html#section1">FABRIKAZIO MEKANIKOKO PRODUKZIOAREN PROGRAMATZEA</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
+                            <li><a href="formacion.html#section2">GORPUTZ- ETA KIROL-EKINTZEN SUSTAPENA</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
+                            <li><a href="formacion.html#section3">BITXIGINTZA ARTISTIKOA</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="formacion.html#section4">ANATOMIA PATOLOGIKOA ETA ZITODIAGNOSIA</a></li>
+                            
+
                             </ul>
                             </li>
-                          <li class="active"><a href="proyectos.html" class="glyphicon glyphicon-send"> Proyectos</a></li>
+                          <li><a href="proyectos.html" class="glyphicon glyphicon-send"> Proyectos</a></li>
                           <li><a href="mapa.html" class="glyphicon glyphicon-globe"> Mapa</a></li>
                           <li><a href="eventos.html" class="glyphicon glyphicon-headphones"> Eventos</a></li>
                           <li><a href="inscripcion.html" class="glyphicon glyphicon-pencil">Inscripción</a></li>
@@ -65,60 +89,56 @@
                     </div><!-- /.container-fluid -->
     </nav>
     </div>
-    <div class="row">
-        <div class="jumbotron">
-        <div class="container">
-          
-            <h1>Proyectos</h1> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, ipsa, aperiam, voluptatum, vero illum eligendi quos odio expedita necessitatibus placeat eos esse mollitia aut hic vitae. Repellat nisi sapiente distinctio.</p> 
-          </div>
+    <div class="container">
+      <div class="row">
+        <nav class="col-sm-3" id="myScrollspy">
+          <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="#section1">FABRIKAZIO MEKANIKOKO PRODUKZIOAREN<br/> PROGRAMATZEA</a></li>
+            <li><a href="#section2">GORPUTZ- ETA KIROL-EKINTZEN SUSTAPENA</a></li>
+            <li><a href="#section3">BITXIGINTZA ARTISTIKOA</a></li>
+            <li><a href="#section4">ANATOMIA PATOLOGIKOA ETA ZITODIAGNOSIA</a></li>
 
-        </div>        
+          </ul>
+        </nav>
+        <div class="col-sm-9">
+          <div id="section1">    
+            <h1>FABRIKAZIO MEKANIKOKO PRODUKZIOAREN PROGRAMATZEA</h1>
+            <p>Titulu honen konpetentzia orokorra da ekipo-ondasunen mekanizazio bidezko fabrikazioa eta muntaia planifikatu, programatu eta kontrolatzea, fabrikatu beharreko produktuen prozesuari buruzko dokumentaziotik eta zehaztapenetatik abiatuta, eta kudeaketaren eta produktuaren kalitatea ziurtatuta; eta laneko arriskuen prebentziorako eta ingurumen babeserako sistemak gainbegiratzea.</p>
+          </div>
+          <div id="section2"> 
+            <h1>GORPUTZ- ETA KIROL-EKINTZEN SUSTAPENA</h1>
+            <p>Jokoak, jolaserako gorputz- eta kirol-ekintza indibidualak, taldekoak eta tresna bidezkoak eta oinarrizko egokitzapen fisikoko ekintzak irakatsi eta dinamizatzea ingurunearen eta parte-hartzaileen ezaugarrietara egokituta, erabiltzailearen asebetetzea eta kalitateko lehiakortasun-maila lortuz eta aurreikusitako kostu-mugen barruan</p>
+          </div>        
+          <div id="section3">         
+            <h1>BITXIGINTZA ARTISTIKOA</h1>
+            <p>A eredua goizez 8:00tatik 14:30era
+
+Sarrerako berariazko proba (2015eko otsailaren 4ko erabakia)
+
+Helburu orokorrak
+
+Heziketa ziklo honen helburua bitxigintza-objektuen proiekzio artistikoan trebeak izango diren espezialistak prestatzea da. Jasoko duten formakuntza tekniko-artistikoa izango da eta honako gaitasun hauek eskuratuko dituzte:
+
+ 
+
+Bitxigintzako piezak sortzea eta fabrikatzea, nork bere diseinuetan oinarrituta edo besteen kontzeptuak eta ideiak interpretatuz. 
+Bitxigintza artistikoa gauzatzeko beharrezkoak diren prozesuak aztertu eta garatu. 
+Arlo honetan erabiltzen diren teknika eta estiloak ezagutu eta erabili. Proiektuaren bozetoak burutu.  
+Tailerrean planoak marraztu (fabrikazioa)  
+CAD eta CAM-en erabilpenean (3Dko diseinua eta inprimaketa) ezagupenak eskuratu 
+Piezak fabrikatzean material berrien erabilpena aztertu. 
+Produktuak merkatuan izan dezakeen bideragarritasuna eta merkatuko arauak aztertu.</p>
+          </div>
+          <div id="section4">         
+            <h1>ANATOMIA PATOLOGIKOA ETA ZITODIAGNOSIA</h1>
+            <p>Teknikari honi, produkzio-sistemaren barruan, lanbide-prestakuntzari buruzko ondoko baldintza orokorrak eskatzen zaizkio:
+
+Dagokion neurrian, nekropsiak egitea, biopsiak prozesatzea eta lagin klinikoen azterketa zitologikoa burutzea, emaitza teknikoak interpretatuz eta baliozkotuz, diagnosi klinikorako edo mediko-legalerako euskarri gisa baliagarri izan daitezen; halaber, berari dagokion neurrian, lana antolatu eta programatzea, zerbitzuaren kalitate-irizpideak betez eta baliabideak optimizatuz, dagokionaren ikuskapenarekin.</p>
+          </div>      
+          
+        </div>
+      </div>
     </div>
-    <div class="row">
-        <div class="container-fluid">
-      <div class="col-sm-6 col-md-6">
-        <div class="thumbnail" >
-          <img src="img/hezibi.jpg" style="height:200px;" width="304" height="236" class="img-responsive" alt="hezibi">
-          <div class="caption">
-            <h3>Hezibi</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, earum, error odio debitis quae alias illum sapiente iste repellat reprehenderit velit officiis aspernatur veritatis numquam dolore adipisci maiores laborum est.</p>
-            <p><a href="#" class="btn btn-primary" role="button">Informazioa</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-6">
-        <div class="thumbnail" >
-          <img src="img/erasmus.jpg" style="height:200px;" class="img-responsive" alt="erasmus">
-          <div class="caption">
-            <h3>Erasmus</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, earum, error odio debitis quae alias illum sapiente iste repellat reprehenderit velit officiis aspernatur veritatis numquam dolore adipisci maiores laborum est.</p>
-            <p><a href="#" class="btn btn-primary" role="button">Informazioa</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-6">
-        <div class="thumbnail" >
-          <img src="img/agenda.jpg" style="height:200px;" class="img-responsive" alt="agenda21">
-          <div class="caption">
-            <h3>Agenda 21</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, earum, error odio debitis quae alias illum sapiente iste repellat reprehenderit velit officiis aspernatur veritatis numquam dolore adipisci maiores laborum est.</p>
-            <p><a href="#" class="btn btn-primary" role="button">Informazioa</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-6">
-        <div class="thumbnail">
-          <img src="img/eje.jpg" style="height:200px;" class="img-responsive" alt="eje">
-          <div class="caption">
-            <h3>Hezibi</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, earum, error odio debitis quae alias illum sapiente iste repellat reprehenderit velit officiis aspernatur veritatis numquam dolore adipisci maiores laborum est.</p>
-            <p><a href="#" class="btn btn-primary" role="button">Informazioa</a></p>
-          </div>
-        </div>
-      </div>
-    </div>    
-        </div>
     <div class ="container-fluid">
         <div class="row">
             <div class="col-md-12">
